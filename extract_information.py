@@ -24,6 +24,9 @@ import requests
 # Used for interacting with MongoDB
 import pymongo
 
+# Load .env for OpenAI key
+load_dotenv()
+
 client = MongoClient(key_param.MONGO_URI)
 dbName = "langchain_demo"
 collectionName = "collection_of_text_blobs"
