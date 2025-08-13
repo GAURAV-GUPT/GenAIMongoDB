@@ -1,4 +1,3 @@
-import langchain
 from pymongo import MongoClient
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import MongoDBAtlasVectorSearch
