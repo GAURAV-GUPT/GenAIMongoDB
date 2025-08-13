@@ -1,19 +1,21 @@
 # Import all necessary libraries at the top
 import os
-#import gradio as gr
+import gradio as gr
 from gradio.themes.base import Base
 
-# LangChain and MongoDB specific imports
+# LangChain, OpenAI, and MongoDB specific imports
 from pymongo import MongoClient
-from langchain.embeddings.openai import OpenAIEmbeddings
+
+# The OpenAI classes have been moved to their own dedicated package, `langchain_openai`
+from langchain_openai import OpenAIEmbeddings, OpenAI
+
 from langchain.vectorstores import MongoDBAtlasVectorSearch
-from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 
 # This is required to load your environment variables from a .env file
 from dotenv import load_dotenv
 
-# Assuming 'key_param.py' contains your URI
+# Assuming 'key_param.py' contains your MongoDB URI
 import key_param
 
 # Load environment variables from a .env file
