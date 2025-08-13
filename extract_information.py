@@ -1,3 +1,4 @@
+import langchain
 from pymongo import MongoClient
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import MongoDBAtlasVectorSearch
@@ -8,7 +9,6 @@ import gradio as gr
 from gradio.themes.base import Base
 import key_param
 #import requirements.txt
-
 # Used for web scraping
 from bs4 import BeautifulSoup
 # Used for interacting with the OpenAI API
