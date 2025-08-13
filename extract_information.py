@@ -7,6 +7,22 @@ from langchain.chains import RetrievalQA
 import gradio as gr
 from gradio.themes.base import Base
 import key_param
+#import requirements.txt
+
+# Used for web scraping
+from bs4 import BeautifulSoup
+# Used for interacting with the OpenAI API
+import openai
+# Used for tokenizing text
+import tiktoken
+# Used as a parser for BeautifulSoup
+import lxml
+# Used for parsing command-line arguments
+import argparse
+# Used for making HTTP requests
+import requests
+# Used for interacting with MongoDB
+import pymongo
 
 client = MongoClient(key_param.MONGO_URI)
 dbName = "langchain_demo"
