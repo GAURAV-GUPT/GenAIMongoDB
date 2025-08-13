@@ -1,0 +1,7 @@
+beautifulsoup4
+openai
+tiktoken
+lxml
+argparse
+requests
+pymongo
